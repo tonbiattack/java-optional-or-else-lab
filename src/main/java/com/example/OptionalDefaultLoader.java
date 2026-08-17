@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class OptionalDefaultLoader {
     public String load(Optional<String> value, AtomicInteger fallbackCalls) {
-        return value.orElse(loadFallback(fallbackCalls));
+        return value.orElseGet(() -> loadFallback(fallbackCalls));
     }
 
     private String loadFallback(AtomicInteger fallbackCalls) {
