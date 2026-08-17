@@ -1,0 +1,3 @@
+# 新規性レポート
+
+Repository Catalogが利用可能かを確認し、Qiita全体をOptional、orElse、orElseGet、遅延評価で検索した。該当する既存記事は確認できなかった。既存のCompletableFuture例外ラボは非同期例外のラップ、本ラボは同期的な引数評価と不要な副作用を扱うため、原因・境界・観測契約が異なる。
